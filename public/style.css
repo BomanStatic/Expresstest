@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+:root {
+    --text: rgb(228, 238, 247);
+    --background: rgb(8, 18, 27);
+    --primary: rgb(149, 189, 223);
+    --secondary: rgb(13, 29, 43);
+    --accent: rgb(63, 135, 198);
+}
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+body {
+    color: white;
+    background-color: var(--background);
+    background-size: cover;
+    font-family: "Poppins", sans-serif;
+}
+
+main {
+    width: min(calc(100% - 2rem), 70rem);
+    margin-inline: auto;
+    display: grid;
+    margin-top: 5rem;
+    text-align: center;
+    gap: 1rem;
+}
+label {
+    font-size: clamp(2rem, 5vw, 5rem);
+    font-weight: 700;
+}
+input {
+    font-family: inherit;
+    font-size: 2rem;
+    padding-inline-start: 2rem;
+    padding-block: 1rem;
+    flex-grow: 1;
+    border-radius: 0.5rem;
+    outline: none;
+    border: none;
+    /* border-bottom: 2px solid var(--accent); */
+    background-color: var(--secondary);
+    color: var(--text);
+    position: relative;
+}
+label > span {
+    background: linear-gradient(120deg, var(--primary), var(--accent));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+div {
+    display: flex;
+    gap: 1rem;
+}
+@media (max-width: 50rem) {
+    div {
+        flex-direction: column;
+    }
+}
+button {
+    padding-inline: 3rem;
+    padding-block: 1rem;
+    font-family: inherit;
+    font-size: 2rem;
+    cursor: pointer;
+    background-color: var(--primary);
+    color: var(--background);
+    border: none;
+    border-radius: 0.5rem;
+    transition: all 0.2s ease-in-out;
+    font-weight: 700;
+}
+button:hover {
+    transform: translate(0, -0.5rem);
+    box-shadow: 0 10px 30px -10px var(--primary);
+}
+/* https://www.realtimecolors.com/dashboard?colors=e4eef7-08121b-95bddf-0d1d2b-3f87c6&fonts=Poppins-Poppins */

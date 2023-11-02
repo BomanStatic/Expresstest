@@ -2,11 +2,20 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Express.js on Vercel</title>
+        <title>URLSnapShot</title>
+        <link rel="icon" href="https://fav.farm/🔥" />
+        <script type="module" src="script.js" defer></script>
+        <link rel="stylesheet" href="style.css" />
+        <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
     </head>
     <body>
-        <h1>Express App Responded</h1>
+        <main>
+            <label for="url">Enter URL to <span>Imgify</span></label>
+            <div>
+                <input id="url" title="Url input" autocomplete="off" type="text" for="url" />
+                <button id="imgifyButton" type="button">Imgify</button>
+            </div>
+        </main>
     </body>
 </html>
